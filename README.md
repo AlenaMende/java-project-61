@@ -6,3 +6,4 @@
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=AlenaMende_java-project-61&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=AlenaMende_java-project-61)
 
 https://asciinema.org/a/sHTq1UeLQMFmYDY8
+https://asciinema.org/a/uOBZ15rLoFs9N6Lo

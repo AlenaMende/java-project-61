@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class PrimeGame {
     public static String[][] getRounds() {
+        Random random = new Random(); // NOSONAR
 
-        Random random = new Random();
         String[][] rounds = new String[3][2];
 
         for (var i = 0; i < 3; i++) {

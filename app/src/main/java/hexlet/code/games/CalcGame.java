@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class CalcGame {
     public static String[][] getRounds() {
+        Random random = new Random(); // NOSONAR
 
-        Random random = new Random();
         String[][] rounds = new String[3][2];
 
         char[] oper = {'+', '-', '*'};

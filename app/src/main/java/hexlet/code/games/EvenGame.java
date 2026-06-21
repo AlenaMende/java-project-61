@@ -1,8 +1,16 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import java.util.Random;
 
 public class EvenGame {
+    public static void play() {
+        String description = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+        String[][] rounds = getRounds();
+
+        Engine.run(rounds, description);
+    }
+
     public static String[][] getRounds() {
         Random random = new Random(); // NOSONAR
 

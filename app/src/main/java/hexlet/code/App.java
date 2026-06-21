@@ -21,24 +21,24 @@ public class App {
                 Cli.run();
                 break;
             case "2":
-                Engine.run(EvenGame.getRounds(), "Answer 'yes' if the number is even, otherwise answer 'no'.");
+                EvenGame.play();
                 break;
             case "3":
-                Engine.run(CalcGame.getRounds(), "What is the result of the expression?");
+                CalcGame.play();
                 break;
             case "4":
-                Engine.run(GCD.getRounds(), "Find the greatest common divisor of given numbers.");
+                GCD.play();
                 break;
             case "5":
-                Engine.run(ProgressionGame.getRounds(), "What number is missing in the progression?");
+                ProgressionGame.play();
                 break;
             case "6":
-                Engine.run(PrimeGame.getRounds(), "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+                PrimeGame.play();
                 break;
             case "0":
                 return;
             default:
-                System.out.println("Unknown choice");
+                System.out.println("Unknown choice " + userChoice);
         }
     }
 }

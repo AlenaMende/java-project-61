@@ -1,8 +1,16 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import java.util.Random;
 
 public class PrimeGame {
+    public static void play() {
+        String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        String[][] rounds = getRounds();
+
+        Engine.run(rounds, description);
+    }
+
     public static String[][] getRounds() {
         Random random = new Random(); // NOSONAR
 

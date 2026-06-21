@@ -1,8 +1,16 @@
 package hexlet.code.games;
 
+import hexlet.code.Engine;
 import java.util.Random;
 
 public class CalcGame {
+    public static void play() {
+        String description = "What is the result of the expression?";
+        String[][] rounds = getRounds();
+
+        Engine.run(rounds, description);
+    }
+
     public static String[][] getRounds() {
         Random random = new Random(); // NOSONAR
 
@@ -15,15 +23,21 @@ public class CalcGame {
             int b = random.nextInt(99);
             char op = oper[random.nextInt(oper.length)];
 
-            int result = switch (op) {
-                case '+' -> a + b;
-                case '-' -> a - b;
-                case '*' -> a * b;
-                default -> 0;
-            };
-            rounds[i][0] = a + " " + op + " " + b;
-            rounds[i][1] = String.valueOf(result);
+            String question = a + " " + op + " " + b;
+            String answer = String.valueOf(calculate(a, b, op));
+
+            rounds[i][0] = question;
+            rounds[i][1] = answer;
         }
         return rounds;
+    }
+    public static int calculate(int a, int b, char op) {
+        int result = switch (op) {
+            case '+' -> a + b;
+            case '-' -> a - b;
+            case '*' -> a * b;
+            default -> throw new RuntimeException("Unknown operator " + op);
+        };
+        return result;
     }
 }

@@ -16,7 +16,7 @@ public class GCD {
 
         String[][] rounds = new String[3][2];
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             int a = random.nextInt(99);
             int b = random.nextInt(99);
 

@@ -16,7 +16,7 @@ public class EvenGame {
 
         String[][] rounds = new String[3][2];
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             int number = random.nextInt(99);
             String question = String.valueOf(number);
             String answer = (number % 2 == 0) ? "yes" : "no";

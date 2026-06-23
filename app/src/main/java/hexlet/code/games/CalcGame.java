@@ -18,7 +18,7 @@ public class CalcGame {
 
         char[] oper = {'+', '-', '*'};
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             int a = random.nextInt(99);
             int b = random.nextInt(99);
             char op = oper[random.nextInt(oper.length)];

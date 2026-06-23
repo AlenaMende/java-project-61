@@ -16,7 +16,7 @@ public class ProgressionGame {
 
         String[][] rounds = new String[3][2];
 
-        for (var i = 0; i < 3; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             int start = random.nextInt(40);
             int step = random.nextInt(15) + 1;
             int length = 10;
